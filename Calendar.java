@@ -31,7 +31,11 @@ public class Calendar {
 			if (dayOfMonth == 1 && dayOfWeek ==1){
 				System.out.println(dayOfMonth + "/" + month +"/" + year + " Sunday");
 				firstSunday ++;
-			}else{
+			}	
+				if (dayOfWeek==1){
+					System.out.println(dayOfMonth + "/" + month +"/" + year + " Sunday");
+			}
+			else{
 				System.out.println(dayOfMonth + "/" + month + "/"+ year);
 			}	
 			advance();
